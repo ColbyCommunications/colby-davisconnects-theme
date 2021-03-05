@@ -37,10 +37,10 @@ section.equal-height div.elementor-widget-wrap > div {
         filter: grayscale(1);
         @include transform( scale(1) );
         @include transition( all 250ms ease);
-        &:hover {
-            filter: grayscale(0);
-            @include transform( scale(1.05) );
-        }
+    }
+    &:hover {
+        filter: grayscale(0);
+        @include transform( scale(1.05) );
     }
 }
 
@@ -49,8 +49,8 @@ section.equal-height div.elementor-widget-wrap > div {
         will-change: transform;
         filter: brightness(0) invert(1);
         @include transition( all 250ms ease);
-        &:hover {
-            filter: brightness(1) invert(0);
-        }
+    }
+    &:hover {
+        filter: brightness(1) invert(0);
     }
 }

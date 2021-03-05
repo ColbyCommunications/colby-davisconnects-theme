@@ -39,8 +39,10 @@ section.equal-height div.elementor-widget-wrap > div {
         @include transition( all 250ms ease);
     }
     &:hover {
-        filter: grayscale(0);
-        @include transform( scale(1.05) );
+        img {
+            filter: grayscale(0);
+            @include transform( scale(1.05) );
+        }
     }
 }
 
@@ -51,6 +53,8 @@ section.equal-height div.elementor-widget-wrap > div {
         @include transition( all 250ms ease);
     }
     &:hover {
-        filter: brightness(1) invert(0);
+        img {
+            filter: brightness(1) invert(0);
+        }
     }
 }

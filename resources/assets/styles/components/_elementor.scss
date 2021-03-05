@@ -36,7 +36,7 @@ section.equal-height div.elementor-widget-wrap > div {
         will-change: transform;
         filter: grayscale(1);
         @include transform( scale(1) );
-        @include trtansition( all 250ms ease);
+        @include transition( all 250ms ease);
         &:hover {
             filter: grayscale(0);
             @include transform( scale(1.05) );
@@ -48,7 +48,7 @@ section.equal-height div.elementor-widget-wrap > div {
     img {
         will-change: transform;
         filter: brightness(0) invert(1);
-        @include trtansition( all 250ms ease);
+        @include transition( all 250ms ease);
         &:hover {
             filter: brightness(1) invert(0);
         }

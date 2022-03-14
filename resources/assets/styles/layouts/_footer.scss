@@ -1,4 +1,7 @@
 footer {
+    // background-color: #353535;
+    // min-height: 190px;
+    // margin-top: 3rem;
     color: #fff;
     a {
         color: #fff !important;
@@ -6,6 +9,19 @@ footer {
             color: #fff !important;
         }
     }
+    // ul {
+    //     display: flex;
+    //     flex-direction: row !important;
+    //     li {
+    //         padding: 0.8rem;
+    //         a {
+    //             color: #fff;
+    //             &:hover {
+    //                 color: #fff;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media (max-width: 768px) {

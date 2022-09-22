@@ -31,7 +31,12 @@ section.equal-height div.elementor-widget-wrap > div {
     }
     ul,
     ol {
+        list-style-type: disc;
+        padding-left: 40px;
         margin-bottom: 10px;
+    }
+    ol {
+        list-style-type: decimal;
     }
 }
 

@@ -38,6 +38,9 @@ section.equal-height div.elementor-widget-wrap > div {
     }
     ol {
         list-style-type: decimal;
+        li {
+            padding-bottom: 10px;
+        }
     }
 }
 
